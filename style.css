@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.container {
+  height: 300px;
+  width: 450px;
+  background: #d1d1d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  box-shadow: 2px 1px 29px 6px hsla(0, 0%, 0%, 0.3);
+  position: relative;
+}
+
+/*BUTTONS*/
+
+.container input[type="button"] {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: none;
+  margin: 5px;
+  font-size: 3rem;
+  box-shadow: 3px 2px hsla(0, 0%, 0%, 0.3);
+  transition: 500ms ease;
+}
+
+#btnplus:hover {
+  box-shadow: 2px 1px 29px 3px hsla(138, 100%, 50%, 0.3);
+  transform: scale(1.1);
+}
+
+#btnminus:hover {
+  box-shadow: 2px 1px 29px 3px hsla(0, 100%, 50%, 0.219);
+  transform: scale(1.1);
+}
+
+.container input[type="text"] {
+  width: 100px;
+  height: 150px;
+  padding: 5px;
+  font-size: 5rem;
+  text-align: end;
+  box-shadow: none;
+  outline: none;
+}
+
+#clear {
+  position: absolute;
+  transform: translateY(130px);
+  font-size: 2rem;
+}
+
+#clear:hover {
+  position: absolute;
+  transform: translateY(130px) scale(1.1) rotate(360deg);
+  font-size: 2rem;
+  box-shadow: 2px 1px 29px 3px hsla(0, 0%, 98%, 0.308);
+}
